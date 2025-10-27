@@ -1,0 +1,34 @@
+#win {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 1px;
+    margin: 20px auto;
+}
+
+.cell {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#reset {
+
+    cursor: pointer;
+    color: #fff;
+    background-color: #ed0dfd;
+    line-height: 1.5;
+    text-align: center;
+    border: transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: 10px;
+
+}
