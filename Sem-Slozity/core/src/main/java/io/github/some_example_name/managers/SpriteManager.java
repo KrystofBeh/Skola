@@ -66,7 +66,7 @@ public class SpriteManager {
         ptakRcl.y = ptak.getSprite().getY();
 
 
-        /* ------ debug - vykreslení hitboxů -----
+        /* ------ debug - vykreslení hitboxů ----- (tady to je chatGPT, protoze jsem potreboval zjistit jak to funguje)
         batch.end();
         shapeRenderer.begin(ShapeRenderer.ShapeType.Line);
         shapeRenderer.rect(spodni.x, spodni.y, spodni.width, spodni.height);
