@@ -5,9 +5,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         Modul obyvak = new  Modul("Obyvak");
-        Modul kuchyn = new  Modul("kuchyn");
-        Modul precin = new  Modul("precin");
-        Modul zachod = new  Modul("zachod");
+        Modul kuchyn = new  Modul("Kuchyn");
+        Modul precin = new  Modul("Precin");
+        Modul zachod = new  Modul("Zachod");
 
         Hrac hrac = new Hrac("Pepa", obyvak);
 
