@@ -4,25 +4,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="index.js"></script>
-    <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 <div class="container">
+    <h1>Form</h1>
     <div class="row">
         <div class="col-4">
             <form id="userAddForm">
-                <lable for="firstName"> Jméno </lable><input type="text" name="firstName" id="firstName" class="form-control" required>
-                <label for="lastName"> Prijmeno </label><input type="text" name="lastName" id="lastName" class="form-control" required>
+                <lable for="firstName"> Jmeno </lable><input type="text" name="firstName" id="firstName" class="form-control" required>
+                <label for="lastName"> Prijmeni </label><input type="text" name="lastName" id="lastName" class="form-control" required>
                 <label for="email"> Email </label><input type="email" name="email" id="email" class="form-control" required>
-                <label for="age"> Vek </label><input type="number" name="age" id="age" class="form-control" required>
-                <br>
-                <button type="button" onclick="addUser()" class="btn btn-primary">Pridat Uzivatele</button>
+                <label for="age"> Vek </label><input type="number" name="age" id="age" class="form-control" required min="0">
             </form>
+            <br>
+            <button type="button" onclick="pridejUser()" class="btn btn-primary">Add User</button>
+            <div style="width: 5000px" id="output"></div>
+            <div style="height: 20px;"></div>
+            <button type="button" onclick="prectiUsers()" class="btn btn-success">Print Users</button>
+            <div style="width: 5000px" id="vysledek"></div>
+            <div style="height: 20px;"></div>
+            <label for="email"> Odstranit emailem </label><input type="email" name="email" id="deleteEmail" class="form-control" required>
+            <br>
+            <button type="button" onclick="odstranUser()" class="btn btn-danger">Delete</button>
         </div>
     </div>
 </div>
-
-
 </body>
 </html>
