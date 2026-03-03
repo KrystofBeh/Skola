@@ -1,14 +1,22 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-
 if not exist pocet_%1.txt (
     echo 0 > pocet_%1.txt
 )
 set /P pocet=<pocet_%1.txt
 
 :OTAZKA
+set isValid="false"
 set /P inp="Pridat (+) nebo precist (-) "
+if "!inp!"=="+" (
+    set isValid=true
+)
+if "!inp!"=="-" (
+    set isValid=true
+)
+if "!isValid!"=="false" exit
+
 if %inp%==+ goto ADD
 if %inp%==- goto VYPIS
 
